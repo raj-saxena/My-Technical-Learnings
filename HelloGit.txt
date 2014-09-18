@@ -1,1 +1,14 @@
+======================
+# Start ssh-agent and add ssh-key
+
 eval "$(ssh-agent -s)" && ssh-add ~/.git/.ssh/id_rsa"
+
+======================
+# Create and add a file to git
+touch something.txt
+git add something.txt
+git commit -m "msg"
+git push origin master #pushes changes to git
+
+# pull changes from git
+git pull origin master

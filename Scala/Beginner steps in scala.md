@@ -23,6 +23,6 @@ flywayPassword := "mysqlPassword"
 Once the plugin is loaded, run the migration with ==>
 
 ```
-
+flywayMigrate
 ---
 

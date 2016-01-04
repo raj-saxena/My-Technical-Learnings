@@ -22,7 +22,7 @@ wget http://www.us.apache.org/dist/ant/binaries/apache-ant-1.9.6-bin.tar.gz
 tar xvfz apache-ant-1.9.6-bin.tar.gz  
 sudo mv apache-ant-1.9.6 /opt  
 vim ~/.profile and add ==>  
- #======== Ant PATH ================
+ #======== Ant PATH ================  
 ANT_HOME="/opt/apache-ant-1.9.6"   
 PATH="$PATH:$ANT_HOME/bin"
 

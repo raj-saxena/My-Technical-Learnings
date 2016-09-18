@@ -1,5 +1,6 @@
 - Run ssh-keygen #Default type (-t) is rsa.
 - Enter a secure passphrase (cannot be recovered)
+
 ===================================
 sudo apt-get install -y git htop curl wget
 

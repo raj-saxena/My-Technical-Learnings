@@ -1,7 +1,5 @@
-import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Session;
-import com.datastax.driver.core.TypeCodec;
 
 public class CreateKeyspace {
     //Query
@@ -20,7 +18,7 @@ public class CreateKeyspace {
     private static final String SELECT_QUERY = "Select * from emp";
 
     public static void main(String[] args) {
-        Session session = setup();
+        Session session = SessionCreator.setup();
         //createKeyspace(session);
 //        createTable(session);
         insertIntoTable(session);
@@ -53,13 +51,5 @@ public class CreateKeyspace {
         //using the KeySpace
         session.execute("USE tp");
         System.out.println("Keyspace created");
-    }
-
-    private static Session setup() {
-        //creating Cluster object
-        Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
-
-        //Creating Session object
-        return cluster.connect();
     }
 }

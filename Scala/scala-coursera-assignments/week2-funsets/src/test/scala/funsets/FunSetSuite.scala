@@ -156,6 +156,7 @@ class FunSetSuite extends FunSuite {
   test("Map function") {
     new TestSets {
       assert(contains(map(s1, _ + 1), 2), "contains 2")
+      assert(contains(map(singletonSet(1000), _ - 1), 999), "contains 999")
       assert(!contains(map(s1, _ + 1), 1), "doesn't contains 2")
     }
   }

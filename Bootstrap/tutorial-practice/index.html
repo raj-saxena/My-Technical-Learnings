@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale=1">
+<head>
+	<title>BS tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="page-header">
+			<h1>Learning Bootstrap</h1>
+		</div>
+
+		<div class="jumbotron">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim lectus, blandit sit amet dui vitae, facilisis gravida felis. Nullam in nulla ultrices, porta enim quis, gravida erat. Maecenas consectetur mi tellus, et vehicula velit sodales sed.</p>
+
+			<p>
+				<a href="#" class="btn btn-default btn-lg">More info</a>
+				<button type="submit" class="btn btn-danger">button</button>
+				<input type="button" value="Info" class="btn btn-info"/>
+				<button type="button" class="btn btn-success">success</button>
+				<button type="button" class="btn btn-primary">primary</button>
+				<button type="button" class="btn btn-primary disabled">disabled</button>
+				<button type="submit" class="btn btn-link">Link</button>
+				<button type="submit" class="btn btn-warning">Warning</button>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+			</p>
+		</div>
+		
+		<hr>
+		
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 1</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim lectus, blandit sit amet dui vitae, facilisis gravida felis. Nullam in nulla ultrices, porta enim quis, gravida erat. Maecenas consectetur mi tellus, et vehicula velit sodales sed. Nam pellentesque tortor quis urna condimentum, vel convallis nunc facilisis. Pellentesque ex erat, porttitor ut lectus in, molestie aliquet ante. Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 2</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim lectus, blandit sit amet dui vitae, facilisis gravida felis. Nullam in nulla ultrices, porta enim quis, gravida erat. Maecenas consectetur mi tellus, et vehicula velit sodales sed. Nam pellentesque tortor quis urna condimentum, vel convallis nunc facilisis. Pellentesque ex erat, porttitor ut lectus in, molestie aliquet ante. Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, 
+			</div>
+
+			<div class="clearfix visible-sm"></div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 3</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim lectus, blandit sit amet dui vitae, facilisis gravida felis. Nullam in nulla ultrices, porta enim quis, gravida erat. Maecenas consectetur mi tellus, et vehicula velit sodales sed. Nam pellentesque tortor quis urna condimentum, vel convallis nunc facilisis. Pellentesque ex erat, porttitor ut lectus in, molestie aliquet ante. Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 4</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim lectus, blandit sit amet dui vitae, facilisis gravida felis. Nullam in nulla ultrices, porta enim quis, gravida erat. Maecenas consectetur mi tellus, et vehicula velit sodales sed. Nam pellentesque tortor quis urna condimentum, vel convallis nunc facilisis. Pellentesque ex erat, porttitor ut lectus in, molestie aliquet ante. Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+				<h4><a href="#col1Content" data-toggle="collapse">Column1</a></h4>
+				<div id="col1Content" class="collapse in">
+					Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<h4><a href="#col2Content" data-toggle="collapse">Column2</a></h4>
+				<div id="col2Content" class="collapse">
+					Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4><a href="#col3Content" data-toggle="collapse">Column3</a></h4>
+				<div id="col3Content" class="collapse">
+					Donec lacinia, sapien ut tincidunt rutrum, dui ex varius erat, quis condimentum dolor justo non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eros augue, congue sed ultricies et, consectetur id nunc. Nam mauris lacus, commodo sed sapien et, ornare dictum massa.
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<h3>Not using row but 'well' and hiding stuff on screen size.</h3>
+		<div class="well hidden-lg hidden-md hidden-sm">
+			<p>Screen extra-small</p>
+		</div>
+
+		<div class="well hidden-lg hidden-md">
+			<p>Screen small and less</p>
+		</div>
+
+		<div class="well hidden-lg">
+			<p>Screen medium and smaller</p>
+		</div>
+
+		<div class="well">
+			<p>(Always there) The `.well` class adds a rounded border around an element with a gray background color and some padding</p>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<h3>Items offset by half till medium.</h3>
+			<div class="col-md-6 col-md-offset-6">
+				<table class="table table-bordered table-striped table-hover">
+					<thead>
+						<tr>
+							<td colspan="2" class="text-center">Best data ever!</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Heading One</th>
+							<th>Heading Two</th>
+						</tr>
+						<tr>
+							<td>Detail One</td>
+							<td>Detail Two</td>
+						</tr>
+						<tr>
+							<td>Detail Three</td>
+							<td>Detail Four</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="theCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="theCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="theCarousel" data-slide-to="1" ></li>
+				<li data-target="theCarousel" data-slide-to="2" ></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="slide1"></div>
+					<div class="carousel-caption">
+						<h1>Amazing Stuff One!</h1>
+						<p>Carousal one</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="slide2"></div>
+					<div class="carousel-caption">
+						<h1>Amazing Stuff Two!</h1>
+						<p>Carousal two</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="slide3"></div>
+					<div class="carousel-caption">
+						<h1>Amazing Stuff Three!</h1>
+						<p>Carousal three</p>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+
+			<a class="right carousel-control" href="#theCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+
+		</div>
+
+		<hr>
+		<!-- Container added to increase page width -->
+		<div style="height: 500px">
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -24,7 +24,7 @@ object Lists {
    * @return The sum of all elements in `xs`
    */
    def sum(xs: List[Int]): Int = xs match {
-    case Nil => throw new IllegalArgumentException
+    case Nil => 0
     case x::tail => if (tail.isEmpty) x else x + sum(tail)
   }
   

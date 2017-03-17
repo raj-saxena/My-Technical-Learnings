@@ -3,7 +3,6 @@
 // Most Important Link:
 // http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset
 
-
 // Start a simple Spark Session
 import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().getOrCreate()

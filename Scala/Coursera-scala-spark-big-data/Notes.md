@@ -7,6 +7,23 @@
 	* Can perform 100x faster than MapReduce. (By keeping in memory, instead of writing after every mapping and reducing).
 	* Works on Resilient Distributed Datasets.
 	* Allows to control what is cached - `persist()` and `cache()`.
+		- `persist()` - keep RDD in memory after a transformation. Can specicy storage and format.
+		- `cache()` - kept in memory as Java objects.
+	* Defers transformations till terminating actions are invoked.
+	* Can stage transformations to combine multiple iterations.
+
+#### Parts of Spark cluster
+	* __Driver Program__ 
+		- contains main(), sparkContext.
+		- creates RDDs
+		- stages up and sends off transformations and actions.
+	* __ClusterManagers__
+		- Allocates resources across cluster
+		- Manages scheduling
+		- Eg __YARN/Mesos__ 
+	* __Worker Nodes__
+		- contain `Executors` that run the tasks and return computed results.
+		- Provide in-memory	storage for cachec RDDs.
 
 ___
 ### RDD

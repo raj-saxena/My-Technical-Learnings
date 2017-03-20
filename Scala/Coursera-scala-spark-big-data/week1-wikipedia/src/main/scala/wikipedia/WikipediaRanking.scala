@@ -23,8 +23,8 @@ object WikipediaRanking {
     * Hint4: no need to search in the title :)
     */
   def occurrencesOfLang(lang: String, rdd: RDD[WikipediaArticle]): Int =
-  //    rdd.filter(_.text.contains(lang + " ")).count().toInt
-    rdd.filter(_.text.toLowerCase.split(" ").contains(lang.toLowerCase)).aggregate(0)((x, _) => x + 1, _ + _)
+//      rdd.filter(_.text.split(" ").contains(lang)).count().toInt
+    rdd.filter(_.text.split(" ").contains(lang)).aggregate(0)((x, _) => x + 1, _ + _)
 
   /* (1) Use `occurrencesOfLang` to compute the ranking of the languages
    *     (`val langs`) by determining the number of Wikipedia articles that

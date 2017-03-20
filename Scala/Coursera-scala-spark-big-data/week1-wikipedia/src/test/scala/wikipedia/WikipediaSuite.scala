@@ -74,8 +74,7 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
       )
     val rdd = sc.parallelize(articles)
     val index = makeIndex(langs, rdd)
-    val res = index.count() == 2
-    assert(res)
+    assert(index.count() === 2)
   }
 
   test("'rankLangsUsingIndex' should work for a simple RDD with three elements") {
@@ -90,8 +89,7 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
     val rdd = sc.parallelize(articles)
     val index = makeIndex(langs, rdd)
     val ranked = rankLangsUsingIndex(index)
-    val res = (ranked.head._1 == "Scala")
-    assert(res)
+    assert(ranked.head._1 == "Scala")
   }
 
   test("'rankLangsReduceByKey' should work for a simple RDD with four elements") {
@@ -107,8 +105,7 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
       )
     val rdd = sc.parallelize(articles)
     val ranked = rankLangsReduceByKey(langs, rdd)
-    val res = (ranked.head._1 == "Java")
-    assert(res)
+    assert(ranked.head._1 == "Java")
   }
 
 

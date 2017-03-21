@@ -5,3 +5,4 @@ target
 .DS_Store
 *.log
 metastore_db
+node_modules

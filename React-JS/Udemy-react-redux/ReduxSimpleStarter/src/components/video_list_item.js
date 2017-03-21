@@ -4,7 +4,7 @@ const VideoListItem = ({video, onVideoSelect}) => {
 	const snippet = video.snippet
 	return(
 		<li onClick={() => onVideoSelect(video)} className="list-group-item">
-			<div className="video-list media">
+			<div className="video-item media">
 				<div className="media-left">
 					<img className="media-object" src={snippet.thumbnails.default.url} />
 				</div>

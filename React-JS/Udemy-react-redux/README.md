@@ -13,7 +13,7 @@ Learning react-redux from https://www.udemy.com/react-redux/
 	- Reducers accept a 'state' and 'action' as argument
 
 * `Containers`
-	- __Smart containers__Have connection to data.
+	- __Smart containers__ have connection to data.
 	- __Dumb containers__ have no connection to data and give the layout of the view.
 
 * `Action` and `ActionCreators`
@@ -24,21 +24,21 @@ Learning react-redux from https://www.udemy.com/react-redux/
 
 
 ### Steps to create React-Redux app
-	* Create component.
-	* Create `reducer` for the component.
-	* Combine the above reducer along with others to the global application state with some key for each. 
-		Eg: if 'books' is key, data can be accessed as `state.books`.
-	* Connecting React and Redux. Inside the component
-		- `import { connect } from 'react-redux'`
-		- add a function `mapStateToProps(state)`
-		- connect and export `export default connect(mapStateToProps)(BookList);`
-	* Creating `actions` and `actionCreators`
-		- `ActionCreators` create `Actions` that contain a 'type' and 'payload'.
-		- `import { bindActionCreators } from 'redux'`
-		- add a function 
-		```
-		mapDispatchToProps(dispatch) {
-			return bindActionCreators({ actionCreatorKey:<actionCreator> }, dispatch)
-		}
-		```
-		- connect and export `export default connect(mapStateToProps)(BookList);`
+* Create component.
+* Create `reducer` for the component.
+* Combine the above reducer along with others to the global application state with some key for each. 
+	Eg: if 'books' is key, data can be accessed as `state.books`.
+* Connecting React and Redux. Inside the component
+	- `import { connect } from 'react-redux'`
+	- add a function `mapStateToProps(state)`
+	- connect and export `export default connect(mapStateToProps)(BookList);`
+* Creating `actions` and `actionCreators`
+	- `ActionCreators` create `Actions` that contain a 'type' and 'payload'.
+	- `import { bindActionCreators } from 'redux'`
+	- add a function 
+	```
+	mapDispatchToProps(dispatch) {
+		return bindActionCreators({ actionCreatorKey:<actionCreator> }, dispatch)
+	}
+	```
+	- connect and export `export default connect(mapStateToProps)(BookList);`

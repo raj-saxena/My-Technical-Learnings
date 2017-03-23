@@ -24,6 +24,7 @@ Learning react-redux from https://www.udemy.com/react-redux/
 * `Middleware`
 	- Take 'actions' as input and can optionally manipulate, log, stop it.
 	- `redux-promise` is a npm package for Ajax middleware.
+	- `Axios` returns promise that is intercepted by 'redux-promise' and forwarded on completion. This helps to keep the code clean.
 
 
 ### Steps to create React-Redux app

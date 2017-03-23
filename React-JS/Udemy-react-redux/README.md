@@ -10,7 +10,8 @@ Learning react-redux from https://www.udemy.com/react-redux/
 * `Reducer` 
 	- A function that reduces a piece of the application state.
 	- There could be as many reducers as the components that have state.
-	- Reducers accept a 'state' and 'action' as argument
+	- Reducers accept a 'state' and 'action' as argument.
+	- Reducers are combined together
 
 * `Containers`
 	- __Smart containers__ have connection to data.
@@ -20,13 +21,15 @@ Learning react-redux from https://www.udemy.com/react-redux/
 	- `Actions` describe the intent/action of the user.
 	- `ActionCreators` create 'actions' that are dispatched and handled by reducers to alter state.
 
-
+* `Middleware`
+	- Take 'actions' as input and can optionally manipulate, log, stop it.
+	- `redux-promise` is a npm package for Ajax middleware.
 
 
 ### Steps to create React-Redux app
 * Create component.
-* Create `reducer` for the component.
-* Combine the above reducer along with others to the global application state with some key for each. 
+* Create `reducer` for the component. Reducer takes 'state' and 'action' as arguments.
+* Combine the above reducer along with others to the global application state with some key for each. Usually done in `reducers/index.js`
 	Eg: if 'books' is key, data can be accessed as `state.books`.
 * Connecting React and Redux. Inside the component
 	- `import { connect } from 'react-redux'`
@@ -42,3 +45,6 @@ Learning react-redux from https://www.udemy.com/react-redux/
 	}
 	```
 	- connect and export `export default connect(mapStateToProps)(BookList);`
+* Making Ajax request with `redux-promise` as middleware and `Axios` library.
+	- create store by applying the middleware.
+

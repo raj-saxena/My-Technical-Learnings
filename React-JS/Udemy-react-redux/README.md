@@ -26,7 +26,10 @@ Learning react-redux from https://www.udemy.com/react-redux/
 	- `redux-promise` is a npm package for Ajax middleware.
 	- `Axios` returns promise that is intercepted by 'redux-promise' and forwarded on completion. This helps to keep the code clean.
 
+* `React-Router`
+	- Updates the react components depending on the routes.
 
+___
 ### Steps to create React-Redux app
 * Create component.
 * Create `reducer` for the component. Reducer takes 'state' and 'action' as arguments.

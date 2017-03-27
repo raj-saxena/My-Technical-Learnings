@@ -38,6 +38,11 @@ ___
 	* `Actions` return single value as results. Eg: reduce, fold, aggregate, collect, take, etc. These are __eager__.
 	* `Laziness/Eagerness` is how Spark limits network activity
 	* Generally, if return type is not a RDD, then it's eager!
+
+#### Pair RDDs
+	* Spark provides different methods to work with tuples of key-value pairs like `reduceByKey`, `mapValues`, `countByKey`, `keys` etc.
+	* It is possible to __join__ different pairRDDs by keys. Inner and outer joins supported.
+
 ___
 ### DataFrame
 	* Spark and scala are moving away from RDD and towards DataFrames as they are simpler to understand.

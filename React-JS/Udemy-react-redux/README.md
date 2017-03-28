@@ -1,5 +1,11 @@
 Learning react-redux from https://www.udemy.com/react-redux/
 
+> React (user action) =>  ActionCreator => Action
+>	▲										 |
+	|										 ▼	
+> State			<=	Reducers		<=	Middleware
+
+
 
 * `Redux`
 	- serves to provide state of the application.
@@ -29,6 +35,7 @@ Learning react-redux from https://www.udemy.com/react-redux/
 * `React-Router`
 	- Updates the react components depending on the routes.
 
+
 ___
 ### Steps to create React-Redux app
 * Create component.
@@ -51,4 +58,23 @@ ___
 	- connect and export `export default connect(mapStateToProps)(BookList);`
 * Making Ajax request with `redux-promise` as middleware and `Axios` library.
 	- create store by applying the middleware.
+
+___
+
+## Rally coding
+	* Redux-Thunk
+		- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 

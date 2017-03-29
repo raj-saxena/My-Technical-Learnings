@@ -1,11 +1,6 @@
 Learning react-redux from https://www.udemy.com/react-redux/
 
-> React (user action) =>  ActionCreator => Action
->	▲										 |
-	|										 ▼	
-> State			<=	Reducers		<=	Middleware
-
-
+> React (user action) =>  ActionCreator => Action => Middleware => Reducers => State => (back to) React
 
 * `Redux`
 	- serves to provide state of the application.
@@ -62,10 +57,50 @@ ___
 ___
 
 ## Rally coding
-	* Redux-Thunk
-		- 
+* Redux-Thunk
+	- for async action creators.
+	- enables returning function from action creator
+	```
+	return (dispatch) => { 
+		request.then({data}) => {
+			dispatch({type: 'ACTION_DO_STUFF', payload: data})
+		}
+	}
+	```
+* Reselect
+	- Use it when calculating a state in a reducer is a product of 2 or more states.
+	- Create reselect `selector`.
+* ReactCSSTransitionGroup - for animation magic.
+	- `npm install --save react-addons-ccs-transition-group`
+	- <transition-name>-enter  for initial state.
+	- <transition-name>-enter-active for actual animation.
+* While using browserHistory router, for all requests, send 'index.html'
+* While working with 3rd party libs 
+	- create wrapper components
+	- use ref system to get div.
+	- return false from `shouldComponentUpdate()` lifecycle method.
+	- Initialize component once by overriding `componentDidMount()` and capture the reference in `this`
+	- To update values, 
+		- change props for the component.
+		- override `componentWillReceiveProps(nextProps)` and implement the change using reference created with `this` in 
+		`componentDidMount()`	
 
+___
+# Deployment
+#### Development Pipeline  
+> Code => Webpack => Webpack dev Server => localhost:8080
 
+#### Production Pipeline  
+> Code => Push to Heroku => Install NPM modules => Run 'postinstall' => Run 'start' => xyz.herokuapp.com
+
+* Heroku automatically runs 'postinstall' and 'start' scripts. These are defined in package.json
+* `postinstall` runs once. In package.json =>
+	```
+	"scripts": {
+		"postinstall": "webpack -p",
+		"start": "node server.js"
+	}
+	```
 
 
 

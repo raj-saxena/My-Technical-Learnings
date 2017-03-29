@@ -83,7 +83,7 @@ ___
 	- To update values, 
 		- change props for the component.
 		- override `componentWillReceiveProps(nextProps)` and implement the change using reference created with `this` in 
-		`componentDidMount()`	
+		`componentDidMount()`.	
 
 ___
 # Deployment
@@ -101,6 +101,15 @@ ___
 		"start": "node server.js"
 	}
 	```
+
+___
+# Testing
+
+## Enzyme
+	* Shallow - for testing the component and not going in depth.
+	* Mount - for testing/rendering children as well.
+
+
 
 
 

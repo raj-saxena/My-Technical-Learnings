@@ -10,6 +10,7 @@
 > yarn init
 ```
 
+___
 ## Webpack
 ```bash
 > yarn add webpack webpack-dev-server path
@@ -36,6 +37,7 @@
 	}
 	```
 
+___
 ## Babel
 ```bash
 > yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react --dev
@@ -50,6 +52,47 @@
 		    ]
 		}
 	```
-	
 
-#### Reference(https://scotch.io/tutorials/setup-a-react-environment-using-webpack-and-babel)
+## Other files 
+* Create `index.html` containing the 'root' container. Add the output js file configured in `webpack.config.js` as the last line after <body. `<script src="/bundle.js"></script>`
+* Create `index.js` as the starting point.
+* Add a start script to `package.json`.
+	```
+	"scripts": {
+    	"start": "webpack-dev-server"
+  	},
+  	```
+
+___
+## React
+```bash
+> yarn add react react-dom
+> mkdir components 
+> cd components
+> touch App.jsx
+```
+
+* Create a simple component
+	```javascript
+		import React, { Component } from 'react';
+
+		export default class App extends Component {
+		  render() {
+		    return (
+		     <div style={{textAlign: 'center'}}>
+		        <h1>Hello World</h1>
+		      </div>);
+		  }
+		}
+	```
+* Change `index.js` to include component and provide starting point
+	```javascript
+		import React from 'react';
+		import ReactDOM from 'react-dom';
+		import App from './components/App.jsx';
+		
+		ReactDOM.render(<App />, document.getElementById('root'));
+	```
+
+		
+#### [Reference](https://scotch.io/tutorials/setup-a-react-environment-using-webpack-and-babel)

@@ -52,3 +52,28 @@ describe('the test environment', () => {
 ```
 * Test that Mocha is working
 `npm test`
+
+___
+## Setup react component
+* Install pending dependencies
+```javascript
+npm install --save webpack webpack-dev-server path babel-loader
+```
+
+* Create **index.html** at root with following:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React App Setup</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+  </body>
+  <script src="/bundle.js"></script>
+</html>
+```
+

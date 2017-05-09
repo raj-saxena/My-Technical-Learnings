@@ -52,6 +52,7 @@ ___
 		    ]
 		}
 	```
+* (Note: add `"stage-1"` in **.babelrc** if you are planning to use static contextTypes and install `babel-preset-stage-1`)
 
 ## Other files 
 * Create `index.html` containing the 'root' container. Add the output js file configured in `webpack.config.js` as the last line after <body. `<script src="/bundle.js"></script>`

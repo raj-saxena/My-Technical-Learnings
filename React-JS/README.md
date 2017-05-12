@@ -1,10 +1,10 @@
 ___
-> How to setup a React project from start with Webpack and Babel => (https://github.com/raj-saxena/My-Technical-Learnings/tree/master/React-JS/react-starter-template)
-> How to add Redux to a React project => ((https://github.com/raj-saxena/My-Technical-Learnings/tree/master/React-JS/redux-starter-template))
+> * How to setup a React project from start with Webpack and Babel => (https://github.com/raj-saxena/My-Technical-Learnings/tree/master/React-JS/react-starter-template)  
+> * How to add Redux to a React project => ((https://github.com/raj-saxena/My-Technical-Learnings/tree/master/React-JS/redux-starter-template))
 ___
 # React-Redux basics
 ### Data Flow =>
-> React (user action) =>  ActionCreator => Action => Middleware => Reducers => State => (back to) React
+![React (user action) =>  ActionCreator => Action => Middleware => Reducers => State => (back to) React](react redux data flow.png?raw=true "react redux data flow")
 
 * `React`
 	- displays the state.

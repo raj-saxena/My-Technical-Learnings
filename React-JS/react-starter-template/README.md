@@ -1,4 +1,4 @@
-# Understanding Webpack and Babel
+# Setting up React project with Webpack and Babel
 
 ## Pre-requisites
 	- node and yarn

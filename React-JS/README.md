@@ -4,7 +4,7 @@ ___
 ___
 # React-Redux basics
 ### Data Flow =>
-![React (user action) =>  ActionCreator => Action => Middleware => Reducers => State => (back to) React](react redux data flow.png?raw=true "react redux data flow")
+![React (user action) =>  ActionCreator => Action => Middleware => Reducers => State => (back to) React](./react_redux_data_flow.png?raw=true "react redux data flow")
 
 * `React`
 	- displays the state.

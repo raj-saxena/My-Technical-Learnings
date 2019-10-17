@@ -6,7 +6,7 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 
 ### Things to learn
 * [x] Kafka
-* [] Kubernetes
+* [-] Kubernetes
 * [] Istio
 * [] GCP
 * [] Grafana and Prometheus. These are not APM!

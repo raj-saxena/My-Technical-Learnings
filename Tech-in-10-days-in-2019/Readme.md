@@ -14,12 +14,12 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 * [] Next CI/CD - Circle CI, travisCI?
 * [] rust and go
 * [-] Scripting 
-    - [x] [Makefile](./Notes.md#Make)
+    - [x] [Makefile](./Notes.md#make-and-makefiles)
     - [] kotlinscript
 * [] Protobuffs, avro, https://github.com/envoyproxy/protoc-gen-validate
 * [] Rest(json) vs rpcs(protobuf)
 * [] DDD 
-* [] Hibernate first level cache and second level cache
+* [x] [Hibernate first level cache and second level cache](./Notes.md#Hibernate---1st-level-and-2nd-level-cache)
 * [] latest java features
 * [] structurizr - document package
 * [] Terraform

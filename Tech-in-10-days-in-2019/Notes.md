@@ -40,3 +40,34 @@ ____
 * Sessions can share data depending upon the caching stragy.
 * Need to add `config`, `annotation` and caching/removing strategy. 
 More details here - https://www.baeldung.com/hibernate-second-level-cache
+
+____
+### Yeoman and Jhipster
+#### Yeoman 
+An opinionated set of generators for the modern web and apps using the popular tools, frameworks and best practices. Works as command line workflow that asks you to choose from the supported options and generates code from the templates.
+Some of the supported popular frameworks and tools - React, Angular, Vue, Springboot, npm, gradle, mvn, etc.
+
+#### JHipster
+The most popular generator that 
+> ... is a development platform to generate, develop and deploy Spring Boot + Angular / React / Vue Web applications and Spring microservices. 
+
+It allows creating monolithic (backend+frontend in same repo) and microservice apps. 
+Uses bunch of sensible defaults for:
+* Containers - Jib/docker
+* DB - Postgres and others, NoSQLs, Liquibase(for migration)
+* Caches - Memcached, Redis
+* Security - JWT, Spring
+* OpenApi, Grafana, Prometheus, etc
+
+```sh
+    # Install kotlin blueprint
+    npm i generator-jhipster-kotlin
+    # use it
+    jhipster --blueprint kotlin
+```
+
+Created a few samples [here](https://github.com/raj-saxena/KotlinJhipsterDemoApp). It's pretty cool :tada:
+
+References:
+* https://yeoman.io/
+* https://www.jhipster.tech/

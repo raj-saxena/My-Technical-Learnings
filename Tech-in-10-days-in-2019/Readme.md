@@ -29,7 +29,7 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 * [x] [Hibernate first level cache and second level cache](./Notes.md#Hibernate---1st-level-and-2nd-level-cache)
 
 ### Tools
-- [] Jhipster
+- [-] [Yeoman and Jhipster](./Notes.md#yeoman-and-jhipster)
 - [] Dependabot
 - [] Thymleaf
 - [] Retrofit client, OkHttp, resilience4J, 

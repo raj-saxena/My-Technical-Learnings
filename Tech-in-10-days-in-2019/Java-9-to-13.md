@@ -75,21 +75,80 @@ This is introduced to have uniformity with use of `var` for local variables. Eg:
 
 (@Nonnull var x, @Nullable var y) -> x.process(y)
 ```
+
 **JEP 328: Flight Recorder**: JFR is a profiling tool used to gather diagnostics and profiling data from a running Java application.
 Its performance overhead is negligible and that’s usually below 1%. Hence it can be used in production applications.
 
-**Remove the Java EE and CORBA Modules**:  Following packages are removed: `java.xml.ws`, ` java.xml.bind`, ` java.activation`, ` java.xml.ws.annotation`, ` java.corba`, ` java.transaction`, ` java.se.ee`, ` jdk.xml.ws`, ` jdk.xml.bind`
+**Removed the Java EE and CORBA Modules**:  Following packages are removed: `java.xml.ws`, ` java.xml.bind`, ` java.activation`, ` java.xml.ws.annotation`, ` java.corba`, ` java.transaction`, ` java.se.ee`, ` jdk.xml.ws`, ` jdk.xml.bind`
+
+**Implicitly compile and run** No need to compile files with `javac` first. You can directly use `java` command and it implicitly compiles. This is done to run a program supplied as a single file of Java source code, including usage from within a script by means of "shebang" files and related techniques. Of course for any project bigger than a file, you would use a build tool like gradle, maven, etc.
 
 ____
-## Java 12
+## Java 12 - Released March 19, 2019
 
+**Switch expression😎** The new `switch` expression expects a returns value. Multiple matches can go on the same line separated by comma and what happens on match is marked with `->`.
+Unlike the traditional `switch`, matches don't fall through to the next match. So you don't have to use `break;` and this helps prevent bugs. Eg:
+```java
+        String status = process(..., ..., ...);
+        var isCompleted = switch (status) {
+            case "PROCESSED", "COMPLETED" -> true;
+            case "WAITING", "STUCK" -> false;
+            default -> throw new InconsistentProcessingStateException();
+        };
+```
+The switch expression is introduced as a preview and requires `--enable-preview` flag to the javac or enabling it in your IDE.
+
+**File byte comparison** with `File.mismatch`. ([From Javadoc](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/nio/file/Files.html#mismatch(java.nio.file.Path,java.nio.file.Path))) Finds and returns the position of the first mismatched byte in the content of two files, or -1L if there is no mismatch.
+
+**Collections.teeing** Streams API gets a new function that applies 2 functions (consumers) on the items and then merges/combines the result of those 2 functions using a third function to produce the final result.  
+[From Javadoc](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/stream/Collectors.html#teeing(java.util.stream.Collector,java.util.stream.Collector,java.util.function.BiFunction)) - Returns a Collector that is a composite of two downstream collectors. Every element passed to the resulting collector is processed by both downstream collectors, then their results are merged using the specified merge function into the final result. 
+
+**String methods**: `indent(int n)`, `transform(Function f)`.
+
+**Smart cast** `instanceOf` can be used now to do a smart cast as below:
+```java
+    ...
+    } catch (Exception ex) {
+        if(ex instanceOf InconsistentProcessingStateException ipse) {
+            // use ipse directly as InconsistentProcessingStateException
+        }
+    }
+```
+
+**JVM improvments**: Low pause GC with Shenandoah, micro-benchmark capabilities, constants API and other improvements.
 
 ____
-## Java 13
+## Java 13 - Released September 17, 2019
 
+**Multi-line texts**: It's now possible to define multiline strings without ugly escape sequences `\` or appends. Eg:
+```java
+        var jsonBody = """
+            {
+                "name": "Foo",
+                "age": 22
+            }
+        """;
+```
+This is introduced as a preview and requires `--enable-preview` flag to the javac or enabling it in your IDE.
+
+**String** gets more methods like `formatted`, `stripIndent` and `translateEscapes` for working with multi-line texts.
+
+**Switch expression** Still in preview and based on feedback now supports having `: yield` syntax in addition to `->` syntax. Hence, we can write
+```java
+        String status = process(..., ..., ...);
+        var isCompleted = switch (status) {
+            case "PROCESSED", "COMPLETED": yield true;
+            case "WAITING", "STUCK": yield false;
+            default: throw new RuntimeException();
+        };
+```
+
+**Socket API** reimplemented with modern NIO implementation. This is being done to overcome limitations of legacy api and build a better path towards Fiber as part of [Project Loom](https://cr.openjdk.java.net/~rpressler/loom/Loom-Proposal.html)
+
+**Z GC** improved to release unused memory.
 
 ___
-### References:
+### References and good articles:
 * Java 9 
     - https://www.pluralsight.com/blog/software-development/java-9-new-features
 * Java 10
@@ -101,3 +160,7 @@ ___
 * Java 12
     - https://www.journaldev.com/28666/java-12-features
     - https://stackify.com/java-12-new-features-and-enhancements-developers-should-know/
+* Java 13
+    - https://jaxenter.com/java-13-jdk-deep-dive-new-features-162272.html
+    - https://www.infoworld.com/article/3340052/jdk-13-the-new-features-in-java-13.html
+    - https://dzone.com/articles/81-new-features-and-apis-in-jdk-13

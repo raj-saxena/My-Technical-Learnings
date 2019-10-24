@@ -7,7 +7,7 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 ## Things to learn
 #### Languages, topics and tools
 * [] Have. a. blog.
-* [-] Latest java features - [9to13](./Java-9-to-13.md)
+* [x] Latest java features - [9to13](./Java-9-to-13.md)
 * [] Project loom (JVM) vs Kotlin Coroutines
 * [] structurizr - document package
 * [] Rust and GoLang

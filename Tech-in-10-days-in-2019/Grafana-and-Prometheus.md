@@ -23,7 +23,7 @@
 Need to figure out the cost of setting up Grafana/Prometheus vs using something like Datadog.
 
 ### References
-https://github.com/grafana/grafana
-https://github.com/prometheus/prometheus
-https://prometheus.io/docs/introduction/overview/
-https://www.loomsystems.com/blog/single-post/2017/06/07/prometheus-vs-grafana-vs-graphite-a-feature-comparison
+* https://github.com/grafana/grafana
+* https://github.com/prometheus/prometheus
+* https://prometheus.io/docs/introduction/overview/
+* https://www.loomsystems.com/blog/single-post/2017/06/07/prometheus-vs-grafana-vs-graphite-a-feature-comparison

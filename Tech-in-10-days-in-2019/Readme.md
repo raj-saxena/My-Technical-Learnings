@@ -5,17 +5,23 @@
 My aim is to learn/refresh the some of the cool things and bring myself up to speed before the next job at a startup. This will help me to be more effective in my role and make informed decisions faster.
 
 ## Things to learn
-#### Languages and topics
-* [] Latest java features
+#### Languages, topics and tools
+* [] Have. a. blog.
+* [-] Latest java features - [9to13](./Java-9-to-13.md)
 * [] Project loom (JVM) vs Kotlin Coroutines
 * [] structurizr - document package
 * [] Rust and GoLang
 * [] Protobuffs, avro, https://github.com/envoyproxy/protoc-gen-validate
 * [] Rest(json) vs rpcs(protobuf)
+- [] Dependabot
+- [] Retrofit client, OkHttp, resilience4J, 
+- [] R2DBC
+- [] JWT
 * [x] [Hibernate first level cache and second level cache](./Notes.md#Hibernate---1st-level-and-2nd-level-cache)
 * [x] Scripting 
     - [x] [Makefile](./Notes.md#make-and-makefiles)
-    - [x] [kotlinscript](./KotlinScripts)
+    - [x] [kotlinscript](./KotlinScripts.md)
+* [-] [Yeoman and Jhipster](./Notes.md#yeoman-and-jhipster)
 
 #### Infrastructure
 * [] Terraform
@@ -25,14 +31,6 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 * [x] [Kafka](./kafka.md)
 * [x] [Kubernetes](./k8s.md)
 * [x] [Grafana and Prometheus](./Grafana-and-Prometheus.md)
-
-#### Tools
-- [] Dependabot
-- [] Thymleaf
-- [] Retrofit client, OkHttp, resilience4J, 
-- [] R2DBC
-- [] JWT
-- [-] [Yeoman and Jhipster](./Notes.md#yeoman-and-jhipster)
 
 #### Design
 * [] Gang of four

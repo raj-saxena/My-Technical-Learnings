@@ -6,17 +6,21 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 
 ## Things to learn
 #### Languages, topics and tools
-* [] Have. a. blog.
-* [x] Latest java features - [9to13](./Java-9-to-13.md)
+* [] JWT, Oauth2, Auth0
+* [] Vault
+* [] Retrofit client, OkHttp, resilience4J, 
+
 * [] Project loom (JVM) vs Kotlin Coroutines
+* [] R2DBC
 * [] structurizr - document package
 * [] Rust and GoLang
 * [] Protobuffs, avro, https://github.com/envoyproxy/protoc-gen-validate
 * [] Rest(json) vs rpcs(protobuf)
-- [] Dependabot
-- [] Retrofit client, OkHttp, resilience4J, 
-- [] R2DBC
-- [] JWT
+* [] Dependabot
+* [] Jib and layered docker images - https://phauer.com/2019/no-fat-jar-in-docker-image
+
+* [x] [Have. a. blog](https://suspendfun.com)
+* [x] Latest java features - [9to13](https://suspendfun.com/Latest-Java-9-to-Java-13-features/)
 * [x] [Hibernate first level cache and second level cache](./Notes.md#Hibernate---1st-level-and-2nd-level-cache)
 * [x] Scripting 
     - [x] [Makefile](./Notes.md#make-and-makefiles)

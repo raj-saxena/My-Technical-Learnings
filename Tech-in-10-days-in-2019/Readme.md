@@ -6,19 +6,18 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 
 ## Things to learn
 #### Languages, topics and tools
-* [] JWT, Oauth2, Auth0
-* [] Vault
-* [] Retrofit client, OkHttp, resilience4J, 
-
-* [] Project loom (JVM) vs Kotlin Coroutines
+* [-] [Vault](./last-day.md)
+* [-] [Retrofit client, OkHttp, resilience4J](./last-day.md)
 * [] R2DBC
-* [] structurizr - document package
+* [] Project loom (JVM) vs Kotlin Coroutines
+
 * [] Rust and GoLang
 * [] Protobuffs, avro, https://github.com/envoyproxy/protoc-gen-validate
 * [] Rest(json) vs rpcs(protobuf)
 * [] Dependabot
 * [] Jib and layered docker images - https://phauer.com/2019/no-fat-jar-in-docker-image
 
+* [x] [JWT, Oauth2, Auth0](./JWT-OAuth-Auth0.md)
 * [x] [Have. a. blog](https://suspendfun.com)
 * [x] Latest java features - [9to13](https://suspendfun.com/Latest-Java-9-to-Java-13-features/)
 * [x] [Hibernate first level cache and second level cache](./Notes.md#Hibernate---1st-level-and-2nd-level-cache)
@@ -28,7 +27,8 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 * [-] [Yeoman and Jhipster](./Notes.md#yeoman-and-jhipster)
 
 #### Infrastructure
-* [] Terraform
+* [-] [Terraform](./last-day.md)
+
 * [] Istio
 * [] GCP
 * [] Next CI/CD - Circle CI, travisCI?
@@ -45,5 +45,5 @@ My aim is to learn/refresh the some of the cool things and bring myself up to sp
 
 * Design and engineering
     - John Lewis - http://engineering-principles.onejl.uk/
-    - Sam Newman - https://samnewman.io/patterns/architectural/bff/
+    - Sam Newman - https://samnewman.io/patterns/architectural/bff/ and https://www.oreilly.com/library/view/building-microservices/9781491950340/ch04.html
     - Microsoft - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/

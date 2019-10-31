@@ -53,6 +53,7 @@ ___
 [jwt.io](https://jwt.io/introduction/)
 [JWT registry](https://www.iana.org/assignments/jwt/jwt.xhtml)
 [OAuth 2.0 RFC](https://tools.ietf.org/html/rfc6749)
+[Illustrated guide with puns](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
 [StackOverFlow - JWT vs OAuth](https://stackoverflow.com/questions/39909419/what-are-the-main-differences-between-jwt-and-oauth-authentication)
 
 
